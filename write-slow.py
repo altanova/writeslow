@@ -17,7 +17,7 @@ try:
 		raise ValueError()
 		
 except (ValueError, IndexError):
-	logging.error("Syntax: %i filename identifier count delay-in-ms" % sys.argv[0])
+	logging.error("\n\nSyntax: %s filename identifier count delay-in-ms\n" % sys.argv[0])
 	sys.exit()
 
 with open(filename, 'r') as fd:
